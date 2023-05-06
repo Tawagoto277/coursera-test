@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    min-width: 520px;
+    padding: 15px 7px;
+    border: 3px dashed white;
+    background-color: rgb(8, 8, 8);
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+hr{
+    border: 2px solid pink;
+}
+
+.Tea{
+    text-decoration: underline;
+    color: lightblue;
+}
+
+ul{
+    list-style-type: lower-greek;
+    padding: 10px;
+    border: 1px solid white;
+    margin: 20px;
+}
+
+img{
+    border-width: 5px;
+    border-color: #aa0505;
+    border-style: double;
+}
+
+.facebook{
+    width: 50px;
+    border-radius: 25px;
+}
+
+.divv{
+    width: 47%;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    color: black;
+    background-color: #aa0505;
+}
+
+#torta{
+    width: 50%;
+    padding: 5%;
+    border: 3px solid orangered ;
+    border-radius: 100%;
+    margin: auto;
+    background: #aa0505;
+}
+
+#torta:hover{
+    border: 3px solid #aa0505 ;
+    color: #8a2700;
+    text-shadow: 1px 1px 1px black;
+    background: #aa0505 no-repeat center;
+    background-image: url(img/Pizza.jpg) ;
+    background-size: cover;
+}
+
+span{
+    width: 40%;
+}
+
+#spanuno{
+    background-color: #aa0505;
+}
+
+#spandue{
+    background-color: #c20463;
+}
+
+.cont{
+    height: 400px;
+    display: flex; 
+}
+
+.divuno{
+    width: calc(100% / 4);
+    border: 5px solid green;
+}
+
+.divuno:hover{
+    border: 5px double lightgreen;
+    color: #8a2700;
+    text-shadow: 1px 1px black;
+    background: #aa0505 no-repeat center;
+    background-image: url(img/ElencoPizze.jpeg);
+    background-size: cover;
+}
+
+.divdue{
+    width: calc(100% / 4);
+    border: 5px solid yellow;
+}
+
+.divdue:hover{
+    border: 5px double rgb(248, 248, 111);
+    color: #8a2700;
+    text-shadow: 1px 1px black;
+    background: #aa0505 no-repeat center;
+    background-image: url(img/Bibite.jpg);
+    background-size: cover;
+}
+
+button{
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+#padbutt{
+    width: 50%;
+    padding: 15px;
+    border: 5px double white;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #d31515;
+}
+
+#butt{
+    margin: 10px;  
+}
+
+#butt > label{
+    line-height: 200%;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#butt > input{
+    width: 100%;
+    padding: 10px;
+}
+
+#boxx{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+#boxx > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.box{
+    display: flex;
+}
+
+.box > div > img{
+    margin: 5px;
+}
+
+#img1{
+    border-radius: 30%;
+}
+
+#img2{
+    border-radius: 10% 30%;
+}
+
+#img3{
+    border-radius: 10% 20% 30%;
+}
+
+#img4{
+    border-radius: 10% 20% 30% 40%;
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    perspective: 1000px; 
+    /* Remove this if you don't want the 3D effect */
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+} 
